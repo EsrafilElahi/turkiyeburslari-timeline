@@ -1,0 +1,230 @@
+/* ===================== Css Reset ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Slab:wght@100&display=swap');
+
+body{
+  background-color: #f6f5f7;
+}
+
+#root {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===================== Header ====================== */
+
+.header{
+  height: 130px;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  line-height: 45px;
+  background-color: #0275d8;
+  color: white;
+  text-transform: capitalize;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: .5px;
+}
+
+.header2{
+  padding-bottom: 15px;
+}
+
+/* ===================== Main ====================== */
+
+.timeline-container {
+  background-color: #f6f5f7;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 85px 0;
+  width: 750px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-container::after {
+  background-color: rgba(207, 0, 0, 0.788);
+  position: absolute;
+  left: calc(50% - 2px);
+  content: "";
+  width: 4px;
+  height: 100%;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  margin: 10px 0;
+  padding-right: 35px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-left: 35px;
+  padding-right: 0;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 350px;
+  padding: 15px;
+  text-align: right;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.timeline-item:nth-child(even) .timeline-content{
+  align-items: flex-start;
+  text-align: left;
+}
+
+.timeline-content::after{
+  content: '';
+  height: 15px;
+  width: 15px;
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  background-color: #f6f5f7;
+  transform: rotate(45deg);
+  right: -6.5px;
+  top: 46%;
+}
+
+.timeline-item:nth-child(even) .timeline-content::after{
+  right: auto;
+  left: -7.5px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.circle{
+  background-color: #f6f5f7;
+  border: 3px solid rgba(207,0,0, 0.788);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  top: 44.5%;
+  right: -45px;
+  z-index: 1;
+}
+
+.timeline-item:nth-child(even) .timeline-content .circle{
+  left: -45px;
+}
+
+.title{
+  padding: 15px 0;
+  line-height: 25px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.date{
+  background-color: #0275d8;
+  color: white;
+  text-transform: uppercase;
+  padding: 2px 3px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.desc{
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(41, 42, 43, 0.664);
+}
+
+/* ===================== Footer ====================== */
+
+.footer{
+  height: 180px;
+  background-color: #0275d8;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.name{
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.ytb-logo{
+  align-self: flex-end;
+}
+
+.subfooter{
+  letter-spacing: .5px;
+  font-size: 17px;
+  color: white;
+}
+
+/* ===================== Media Query ====================== */
+
+@media only screen and (max-width:767px) {
+  .header{
+    font-size: 8px;
+  }
+
+  .timeline-item:nth-child(even){
+    align-self: flex-start;
+  }
+
+  .timeline-item:nth-child(even) {
+    align-self: flex-start;
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 35px;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content{
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content::after{
+    left: auto;
+    right: -7.5px;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .timeline-item:nth-child(even) .timeline-content .circle{
+    left: auto;
+  }
+
+  .name{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+  }
+  
+  .ytb-logo{
+    align-self: flex-end;
+    width: 110px;
+    height: 50px;;
+}
+  
+  .subfooter{
+    letter-spacing: .5px;
+    font-size: 11px;
+    color: white;
+  }
+  
+}
