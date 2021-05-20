@@ -1,0 +1,42 @@
+[33mcommit e2e37806cbb15d696f8c315185f85dc9d1d1d76d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Esrafil <57289402+EsrafilElahi@users.noreply.github.com>
+Date:   Thu May 20 15:50:54 2021 +0430
+
+    add logo
+
+[33mcommit 64435ad5e368199188bd75e4faebe8f5bab74850[m
+Author: Esrafil <57289402+EsrafilElahi@users.noreply.github.com>
+Date:   Thu May 20 15:49:18 2021 +0430
+
+    delete logo
+
+[33mcommit 3bb6617f9803a555cd5304ae34ee2bf224215836[m
+Merge: 2193f30 f0318b3
+Author: Esrafil <57289402+EsrafilElahi@users.noreply.github.com>
+Date:   Thu May 20 15:43:30 2021 +0430
+
+    Merge https://github.com/EsrafilElahi/turkiyeburslari-timeline
+
+[33mcommit 2193f3084b3c2a9b7dae9384ddeaa4e4b1c8718c[m
+Author: Esrafil <57289402+EsrafilElahi@users.noreply.github.com>
+Date:   Thu May 20 01:50:06 2021 +0430
+
+    add icon and readMe file
+
+[33mcommit f0318b3f018c3fcf2aa27b7d3a8b350871b81376[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Esrafil <57289402+EsrafilElahi@users.noreply.github.com>
+Date:   Wed May 19 14:19:02 2021 -0700
+
+    Create README.md
+
+[33mcommit 2aef0783adb57ab1c57d904b10440b4a7e71f496[m
+Author: Esrafil <57289402+EsrafilElahi@users.noreply.github.com>
+Date:   Thu May 20 00:09:07 2021 +0430
+
+    add all files
+
+[33mcommit d5698170767e73b3e2d9c124f11f12d6b34663b3[m
+Author: Esrafil <57289402+EsrafilElahi@users.noreply.github.com>
+Date:   Tue May 18 14:03:57 2021 +0430
+
+    Initialize project using Create React App
