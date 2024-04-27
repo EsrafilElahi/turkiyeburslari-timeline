@@ -8,7 +8,7 @@ const Footer = () => {
             <p className='name'>Esrafil Elahi</p>
             <img src={ytbImg} alt="ytb logo" className="ytb-logo" />
             <p className='subfooter'>2021 - TURKIYE SCHOLARSHIPS</p>
-        </div>
+        </div> 
     );
 }
 
